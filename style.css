@@ -57,14 +57,14 @@ body {
 }
 
 .sidebar a:hover {
-    background-color: #1abc9c; /* Highlight on hover */
+    background-color: #1abc9c; /*Highlight on hover */
 }
 
 .sidebar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 25px;
     margin-left: 50px;
 }
 
@@ -128,7 +128,7 @@ body {
 /* About Me Section */
 #about {
     background-color: #ecf0f1; /* Light Grey */
-    padding: 50px;
+    
     text-align: center;
 }
 .about-div{
@@ -137,10 +137,15 @@ body {
     padding:60px 0;
     
 }
+.abot h1{
+    color: #2c3e50;
+    font-size: 40px;
+   
+}
 
 #about h2 {
     font-size: 36px;
-    margin-bottom: 10px;
+    padding-top: 60px;
     color: #2c3e50;
 }
 
@@ -153,115 +158,94 @@ body {
     text-align: left;
 }
 
-/* Skills Section */
-#skills {
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#skills h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-#skills ul {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-}
-
-#skills ul li {
-    font-size: 20px;
-    padding: 10px 0;
-    color: #2c3e50;
-}
-
-#skills ul li i {
-    color: #1abc9c;
-    margin-right: 10px;
-    font-size: 22px;
-}
 
 /* Projects Section */
 #projects {
     padding: 50px;
     background-color: #ecf0f1;
-}
-
-#projects h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
     text-align: center;
+    padding-bottom: 11rem;
+}
+#projects h1{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    font-size: 40px;
     color: #2c3e50;
 }
-
-.project-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+.projects {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project-item h3 {
-    font-size: 24px;
-    color: #2c3e50;
-}
-
-.project-item p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
-}
-
+    text-align: center;
+  }
+  
+  .card .icon {
+    font-size: 40px;
+    color: #00c853;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #555;
+  }
 /* Contact Section */
 #contact {
     background-color: #fff;
     padding: 50px;
     text-align: center;
+    
 }
-
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+#contact {
+    text-align: center;
+    padding: 50px;
+   
+  }
+  #contact h1{
+    font-size: 40px;
     color: #2c3e50;
-}
-
-#contact p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-#contact ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-#contact ul li {
-    font-size: 20px;
-    margin: 10px 0;
-    color: #2c3e50;
-}
-
-#contact ul li i {
-    color: #1abc9c;
-    margin-right: 10px;
-}
-
-#contact ul li a {
-    color: #2c3e50;
-    text-decoration: none;
-}
-
-#contact ul li a:hover {
-    color: #1abc9c;
-}
+    margin-bottom: 30px;
+  }
+  #contact p{
+    margin-bottom: 10px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 5rem;
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    font-size: 2rem; /* Adjust size of the icons */
+    color: #000; /* Icon color */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff; /* Hover color (blue in this case) */
+    transform: scale(1.2);
+  }
+  
 
 /* Footer */
 footer {
@@ -282,6 +266,17 @@ footer p {
     #skills ul {
         display: block;
     }
+    .cards{
+        display: block;
+        margin-left: 30px;
+        
+    }
+    .about-div{
+        display: block;
+    }
+    .card{
+        margin-top: 20px;
+    }
 
     .sidebar a {
         font-size: 16px;
@@ -301,3 +296,49 @@ footer p {
     }
 }
 
+
+
+
+
+
+
+
+/* Skills Section */
+#skills {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+    background-color:#ecf0f1;
+}
+#skills h1{
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    width: 50%;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #a259ff;
+    color: white;
+    padding: 2px;
+    text-align: right;
+    border-radius: 10px;
+}
